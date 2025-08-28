@@ -1,0 +1,18 @@
+[project]
+name = "uv-package-project"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "arslan ali", email = "arslanwebguy@gmail.com" }
+]
+requires-python = ">=3.13"
+dependencies = []
+
+[project.scripts]
+uv-package-project = "uv_package_project:main"
+simple = "uv_package_project.hello:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
